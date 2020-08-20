@@ -21,6 +21,7 @@ urlpatterns = [
     path('', mainapp.index),
     path('cotalogs/', mainapp.cotalogs),
     path('contacts/', mainapp.contacts),
-    
+
+
     path('admin/', admin.site.urls),
 ]
