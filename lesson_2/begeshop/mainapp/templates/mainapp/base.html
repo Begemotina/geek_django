@@ -1,17 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>{{ page_title }}</title>
+    <title>{{ title_page|upper| default:"Хатка Бегемота" }}</title>
     {% block css %}
-        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
     {% endblock %}
-    {% block js %}
-    {% endblock %}
+{% block js %}
+{% endblock %}
 </head>
 <body>
-<div class="header"><img class="menu_logo" src="/static/img/pink_begemot.jpg" alt="picture">
+<div class="header"><img class="menu_logo" src="{% static 'img/pink_begemot.jpg' %}" alt="picture">
     <div class="navigation">
         <ul class="menu">
             <li><a href="/">главная</a></li>
@@ -19,18 +20,15 @@
             <li><a href="/contacts/">контакты</a></li>
         </ul>
     </div>
-    <div>
-        <hr>
-    </div>
-</div>
+
 </div>
 {% block container %}
-    {#   уникальное содержимое #}
+{#   уникальное содержимое #}
 {% endblock %}
 <div class="footer">
     <hr>
     <div class="rights">
-        <h6>&copy;«Все права защищены»</h6></div>
+        <h6>&copy;«Все права защищены» {% now " F Y " %}</h6></div>
 </div>
 </body>
 </html>

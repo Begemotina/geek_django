@@ -1,7 +1,4 @@
 content_contacts
-
-
-
 .container {
     margin: 0 auto;
     height: 400px;
@@ -25,7 +22,7 @@ ul {
 hr {
     border: 3px;
     border-color: coral;
-    margin-top: 20px 
+    margin-top: 20px
 }
 
 
@@ -36,10 +33,11 @@ hr {
     position: relative;
     top: 5px;
     left: 22px;
-     
+
 }
+
 /* просили прижать к правому краю я прижал*/
-.navigation{
+.navigation {
     position: relative;
     float: right;
     top: 10px;
@@ -55,49 +53,56 @@ hr {
     font-size: large;
     color: salmon;
 }
+
 .menu li a:visited {
     color: deeppink;
 }
+
 .menu li a:hover {
     color: indigo;
 }
 
-.content_index{
+.content_index {
     height: 650px;
     width: 800px;
     margin-left: 380px;
 }
+
 /*подвал*/
 
-.footer{
+.footer {
     position: relative;
     float: bottom;
     height: 100px;
     background-color: #905BAE;
-    
+
 }
 
-.rights{
-    float:right;
+.rights {
+    float: right;
     margin-right: 100px;
     margin-top: 20px;
 }
 
 
 /*каталог*/
-.conotent_catalog{
-margin:100px 620px;
-padding-bottom: 200px;
+.conotent_catalog {
+    margin: 100px 620px;
+    padding-bottom: 200px;
 }
 
-.light-item{    
-display: inline-block;
-outline-color: black;
-outline-style: double;
-outline-width: 5px;        
+.light-item {
+    display: inline-block;
+    outline-color: black;
+    outline-style: double;
+    outline-width: 5px;
+}
+.lights_types_menu li {
+    display: inline;
+    margin-right: 10px;
 }
 
-.light-item:nth-child(2) {
+ul.light-item:nth-child(2) {
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -106,18 +111,21 @@ outline-width: 5px;
 .short_discription,
 .full_discription {
     font-style: italic;
-    font-size: 20px;    
+    font-size: 20px;
 }
-.img_item{
-    float:left;
+
+.img_item {
+    float: left;
     margin-right: 30px;
 }
+
 h1,
 h2,
 h4,
 h5 {
     color: navy
 }
+
 h3 {
     text-align: center;
     font-size: 25px;
@@ -151,18 +159,22 @@ h3 {
     color: midnightblue;
     list-style-position: outside;
 }
+
 td {
     width: 2500px;
     text-align: center;
     border: 2px solid #808080;
 }
+
 table {
     border: 2px solid #808080;
     border-collapse: collapse;
 }
+
 span p {
     font-style: italic;
 }
+
 span p:first-letter {
     font-family: Brush Script MT;
     font-weight: 900;
@@ -170,23 +182,27 @@ span p:first-letter {
     color: midnightblue;
 }
 
-.tusk tr:nth-child(1){
+.tusk tr:nth-child(1) {
     height: 180px;
-    
+
 }
+
 .button_buy {
     height: 50px;
     width: 100%;
-    margin-top: 10px; 
-    font-size:18px;
+    margin-top: 10px;
+    font-size: 18px;
 }
-.button_buy:hover{
+
+.button_buy:hover {
     outline: 3px solid #808080;
-    font-size:35px;
-    }
-.button_buy:active {
-   background:salmon;
+    font-size: 35px;
 }
+
+.button_buy:active {
+    background: salmon;
+}
+
 /* Контакты  */
 .input_contact {
     width: 250px;
@@ -195,9 +211,11 @@ span p:first-letter {
     font-size: 18px;
     color: midnightblue;
 }
+
 .item_img {
     outline: 3px solid #808080
 }
+
 .item_img:hover {
     outline: none
 }
@@ -207,6 +225,7 @@ span p:first-letter {
     width: 100%;
     height: 374px;
 }
+
 .light-item a img {
     width: 200px;
     height: 200px;

@@ -1,8 +1,9 @@
 {% extends 'mainapp/base.html' %}
+{% load static %}
 {% block container %}
    <div class="content_index">
             <h1>Хатка Бегемота</h1>
-            <br> <img id="main" src="/static/img/pink_begemot.jpg" alt="picture">
+            <br> <img id="main" src="{% static 'img/pink_begemot.jpg' %}" alt="picture">
             <h3>Немого о нас </h3>
             <p class="short_discription"><i>Это интернет палатка которая будет барыжить фонарями</i></p>
             <h3>Что тут такое и с чем это едят</h3>
