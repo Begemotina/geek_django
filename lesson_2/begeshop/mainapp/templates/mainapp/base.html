@@ -15,9 +15,9 @@
 <div class="header"><img class="menu_logo" src="{% static 'img/pink_begemot.jpg' %}" alt="picture">
     <div class="navigation">
         <ul class="menu">
-            <li><a href="/">главная</a></li>
-            <li><a href="/cotalogs/">каталог</a></li>
-            <li><a href="/contacts/">контакты</a></li>
+            <li><a href="{% url 'index' %}">главная</a></li>
+            <li><a href="{% url 'cotalogs' %}">каталог</a></li>
+            <li><a href="{% url 'contacts' %}">контакты</a></li>
         </ul>
     </div>
 
