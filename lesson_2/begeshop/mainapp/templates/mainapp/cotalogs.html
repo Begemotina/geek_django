@@ -4,10 +4,14 @@
 {% include 'mainapp/included/ink__main_menu.html' %}
     <h3>Каталог фонариков</h3>
     <div class="conotent_catalog">
+    {%  for item in light_items %}
         <div class="light-item">
-            <a href="#"> <img src="{% static 'img/csm_esprite-fs-01_1a739cd840.png' %}" title="esprite" alt="esprite"></a>
-            <br> <a href="#">ESPRITE™ FS</a></div>
-        <div class="light-item">
+            <a href="{{ item.href1 }}"> <img src="{{item.image}}" title="{{ item.title }}" alt="{{ item.title }}"></a>
+            <br> <a href={{ item.href2 }}>{{ item.name }}</a>
+        </div>
+    {% endfor %}
+
+     <div class="light-item">
             <a href="#"><img src="{% static 'img/csm_tetra1-01_42095bb7f1.png' %}" title="Tetra1" alt="esprite"></a>
             <br>
             <br> <a href="#">Tetra1™</a></div>

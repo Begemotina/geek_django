@@ -23,11 +23,15 @@
         <input class="button" type="submit" name="" id="">
         <input class="button" type="reset"></form>
     <h2>Адрес</h2>
+    {% for place in places %}
+    <div class="place">
     <ul id="address">
-        <li>Контактный номер телефона интернет-магазина: 17-85-00</li>
-        <li> Aдрес: туда-туда, потом на лево, через поле, направо от третьей пальмы хатка 15</li>
-        <li>E-mail: Begemotina@nightmail.ru</li>
+        <li>"{{ place.phone }}"</li>
+        <li> "{{ place.address }}"</li>
+        <li>"{{ place.email }}"</li>
     </ul>
+    </div>
+    {% endfor %}
     <h2>как нас найти </h2> <a
         href="https://yandex.ru/maps/?um=constructor%3A60b04cf473c8e6b9e4b9b8ebe9a2f1708fdabcea38bd990074659e3178ecbec6&source=constructorLink"
         target="_blank">Мы тут</a>
